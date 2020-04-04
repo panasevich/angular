@@ -1,0 +1,37 @@
+.panel {
+  display: inline-flex;
+  background: #ddd;
+  border-radius: 0 0 3px 3px;
+  padding: 5px;
+  flex-direction: column;
+  position: absolute;
+  left:0;
+  top: 0;
+  bottom: 0;
+  .input-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    &:first-child {
+      margin-top: 0;
+    }
+    label {
+      font-size: 14px;
+    }
+    input {
+      border-radius: 3px;
+      line-height: 20px;
+      border: 1px solid grey;
+      padding: 0 5px;
+    }
+  }
+  button {
+    margin-top: 20px;
+    cursor: pointer;
+  }
+}
+.template-wrapper {
+  width: 300px;
+  background: #ccc;
+  margin: 0 auto;
+}
