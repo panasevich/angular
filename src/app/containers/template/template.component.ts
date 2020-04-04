@@ -51,7 +51,7 @@ export class TemplateComponent implements OnInit {
       .subscribe(data => {
         this.data = data;
         this.template = data.find(({id}) => id === +this.id);
-        this.safeHtml = this.sanitizer.bypassSecurityTrustHtml(this.template?.template);
+        this.safeHtml = this.sanitizer.bypassSecurityTrustHtml(this.template ? this.template.template : '...loading');
       });
   }
 
